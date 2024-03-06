@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://ld2l306kktx7"]
 
 [node name="Root_Scene" type="Node"]
+
+//Camera
+[camera fov=90.0 near=1 far=500]
+[sprite texture="res://assets/textures/background.png"] 
