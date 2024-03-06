@@ -5,3 +5,7 @@
 //Camera
 [camera fov=90.0 near=1 far=500]
 [sprite texture="res://assets/textures/background.png"] 
+
+[position x=-4 y=8 z=0]
+[rotation x=0 y=0 z=0]
+
