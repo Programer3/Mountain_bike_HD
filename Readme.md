@@ -2,7 +2,7 @@
 
 Mountain_Bike_Hd is a 2D Game made in **GODOT ENGINE** ([link](https://github.com/godotengine/godot)). Extra Sample Description need Update.
 
-[All the Contributors of this Project are here](https://github.com/Programer3/Mountain_bike_HD/blob/master/RContributors.md)
+[All the Contributors of this Project are here](https://github.com/Programer3/Mountain_bike_HD/blob/master/Contributors.md)
 
 ## For You
 
