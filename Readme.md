@@ -8,7 +8,8 @@ Mountain_Bike_Hd is a 2D Game made in **GODOT ENGINE** ([link](https://github.co
 
 Real Steps and Turtorials related to Project Here
 
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
+> sub highlighting text here.
+`Code or ommands here`
 
 ## TODO :-
 
@@ -19,3 +20,8 @@ Real Steps and Turtorials related to Project Here
 - [ ] Add Map variants
 - [ ] Fully Functioning Basic Game
 - [ ]  Track and Show High Scores
+
+# Licensing :
+
+Font Used : [Junglefever-font](https://www.1001fonts.com/junglefever-font.html)
+Assets Used : [Lucylavend physics car asset pack](https://lucylavend.itch.io/physics-car-game-asset-pack?download) & 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c6ef62vklohd1"]
 
-[ext_resource type="Texture2D" uid="uid://bf6wlg2g6ad3k" path="res://icon.svg" id="1_4oavh"]
+[ext_resource type="Texture2D" uid="uid://dn4sf4y8xtnr5" path="res://Sprites/Vehicles/Wheel_girl.png" id="1_myx21"]
 
 [sub_resource type="GDScript" id="GDScript_kqjpl"]
 script/source = "extends CharacterBody2D
@@ -33,6 +33,7 @@ func _physics_process(delta):
 "
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_k6h67"]
+radius = 8.57619
 
 [node name="car1" type="CharacterBody2D"]
 position = Vector2(148, 105)
@@ -42,7 +43,7 @@ script = SubResource("GDScript_kqjpl")
 texture_filter = 1
 position = Vector2(84, 79)
 scale = Vector2(0.53125, 0.507813)
-texture = ExtResource("1_4oavh")
+texture = ExtResource("1_myx21")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(84, 79)

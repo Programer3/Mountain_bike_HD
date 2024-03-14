@@ -6,7 +6,7 @@ var hill_range = 100
 
 var screensize
 var terrain = Array()
-var texture = preload("res://Sprites/grass.png")
+var texture = preload("res://Sprites/Terrain/DirtBG.png")
 
 func _ready():
 	randomize()

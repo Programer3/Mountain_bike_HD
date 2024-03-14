@@ -4,7 +4,7 @@
 # Godot 4+ specific ignores
 .godot/
 
-# vscode - Godot Specific #
+# vscode - Godot Specific
 .vscode/
 
 # Godot-specific ignores
