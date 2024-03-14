@@ -6,3 +6,4 @@
 [Krishna Singh](https://github.com/krishnasingh34)
 
 ## External Contributors
+## # Translators 🌐:
