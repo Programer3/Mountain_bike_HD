@@ -1,0 +1,224 @@
+[gd_scene load_steps=5 format=3 uid="uid://cu68i1er1spd2"]
+
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_kkkmn"]
+[ext_resource type="FontFile" uid="uid://dbp4434870sw3" path="res://Fonts/junglefever.feverinlinenf.otf" id="2_6did4"]
+
+[sub_resource type="Gradient" id="Gradient_wnhst"]
+colors = PackedColorArray(0.163616, 0.478999, 0.483498, 1, 0.311737, 0.811145, 0.467975, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_n46jx"]
+gradient = SubResource("Gradient_wnhst")
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kkkmn")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1150.0
+offset_bottom = 650.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_n46jx")
+
+[node name="HypotheticalGameMenu" type="RichTextLabel" parent="TextureRect"]
+z_index = 2
+texture_filter = 6
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 14.0
+offset_right = 300.0
+offset_bottom = 232.0
+grow_horizontal = 2
+tooltip_text = "Mountain Bike by Aman"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/normal_font = ExtResource("2_6did4")
+theme_override_font_sizes/normal_font_size = 90
+text = " Mountain Adventure"
+fit_content = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1150.0
+offset_bottom = 650.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect1" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -538.0
+offset_top = -425.0
+offset_right = -352.0
+offset_bottom = -203.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.164706, 0.486275, 0.505882, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 421.0
+offset_top = -268.0
+offset_right = 709.0
+offset_bottom = -158.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.305882, 0.803922, 0.4, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 390.0
+offset_top = 212.0
+offset_right = 497.0
+offset_bottom = 504.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.266667, 0.717647, 0.439216, 0.952941)
+
+[node name="ColorRect4" type="ColorRect" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -611.0
+offset_top = 13.0
+offset_right = -306.0
+offset_bottom = 425.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.317647, 0.803922, 1, 0.533333)
+
+[node name="GameMenuButton" type="Control" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 252.0
+offset_top = 199.0
+offset_right = 920.0
+offset_bottom = 599.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayButton" type="Button" parent="GameMenuButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.320359
+anchor_top = 0.14125
+anchor_right = 0.631737
+anchor_bottom = 0.17625
+offset_left = -34.0
+offset_top = -31.5
+offset_right = 54.0
+offset_bottom = 26.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+tooltip_text = "Play New Game"
+theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
+theme_override_font_sizes/font_size = 40
+text = "Play
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="OptionsButton" type="Button" parent="GameMenuButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.388473
+anchor_top = 0.38125
+anchor_right = 0.593563
+anchor_bottom = 0.40375
+offset_left = -79.5
+offset_top = -31.5
+offset_right = 79.5
+offset_bottom = 31.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+tooltip_text = "Options/ Settings"
+theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
+theme_override_font_sizes/font_size = 40
+text = "Options"
+metadata/_edit_use_anchors_ = true
+
+[node name="QuitButton" type="Button" parent="GameMenuButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.337575
+anchor_top = 0.86125
+anchor_right = 0.644461
+anchor_bottom = 0.86375
+offset_left = -45.5
+offset_top = -31.5
+offset_right = 45.5
+offset_bottom = 39.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+tooltip_text = "Quit Entire Game"
+theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
+theme_override_font_sizes/font_size = 40
+text = "Quit
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="AboutButton" type="Button" parent="GameMenuButton"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.362275
+anchor_top = 0.62125
+anchor_right = 0.61976
+anchor_bottom = 0.64375
+offset_left = -62.0
+offset_top = -31.5
+offset_right = 62.0
+offset_bottom = 31.5
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "About"
+mouse_default_cursor_shape = 16
+theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
+theme_override_font_sizes/font_size = 40
+text = "About"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="GameMenuButton/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="GameMenuButton/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="GameMenuButton/QuitButton" to="." method="_on_quit_button_pressed"]
