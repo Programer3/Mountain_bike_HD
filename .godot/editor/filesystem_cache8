@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1710607200
+::res://::1710607488
 Contributors.md::TextFile::-1::1710418001::0::1::::<><>::
 icon.svg::CompressedTexture2D::2802716386996795582::1709556204::1710420203::1::::<><>::
 Readme.md::TextFile::-1::1710421907::0::1::::<><>::
@@ -9,14 +9,14 @@ EngineSound.ogg::AudioStreamOggVorbis::344083580440516827::1631182902::171042020
 Fuel.wav::AudioStreamWAV::2822883636004115670::1631182902::1710420205::1::::<><>::
 ::res://Fonts/::1710420905
 junglefever.feverinlinenf.otf::FontFile::7262230658837969656::1710419633::1710420203::1::::<><>::
-::res://Scenes/::1710606691
+::res://Scenes/::1710607223
 car1.gd::GDScript::-1::1710560934::0::1::::<>RigidBody2D<>::
-car1.tscn::PackedScene::6957313426797288252::1710606691::0::1::::<><>::uid://cupfhweggbnip::::res://Sprites/Vehicles/girl_car_body.png<>uid://5f7dgw08ymde::::res://Scenes/wheel_default.tscn
+car1.tscn::PackedScene::6957313426797288252::1710607223::0::1::::<><>::uid://cupfhweggbnip::::res://Sprites/Vehicles/girl_car_body.png<>uid://5f7dgw08ymde::::res://Scenes/wheel_default.tscn
 main_menu.gd::GDScript::-1::1710593124::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::6242633270229428621::1710606691::0::1::::<><>::res://scenes/main_menu.gd<>uid://dbp4434870sw3::::res://Fonts/junglefever.feverinlinenf.otf
-wheel_default.tscn::PackedScene::2117935849368251914::1710606691::0::1::::<><>::uid://dfk0c86iwbhe2::::res://Sprites/Vehicles/Wheel.png
-::res://Scenes/Levels/::1710606691
-map1.tscn::PackedScene::4385040888273637168::1710606691::0::1::::<><>::uid://c6ef62vklohd1::::res://Scenes/car1.tscn<>uid://q2gcjsij1dur::::res://Sprites/Terrain/DirtBG.png
+main_menu.tscn::PackedScene::6242633270229428621::1710607204::0::1::::<><>::res://scenes/main_menu.gd<>uid://dbp4434870sw3::::res://Fonts/junglefever.feverinlinenf.otf
+wheel_default.tscn::PackedScene::2117935849368251914::1710607204::0::1::::<><>::uid://dfk0c86iwbhe2::::res://Sprites/Vehicles/Wheel.png
+::res://Scenes/Levels/::1710607204
+map1.tscn::PackedScene::4385040888273637168::1710607204::0::1::::<><>::uid://c6ef62vklohd1::::res://Scenes/car1.tscn<>uid://q2gcjsij1dur::::res://Sprites/Terrain/DirtBG.png
 ::res://Sprites/::1710420896
 ::res://Sprites/Characters/::1710420204
 Body2.png::CompressedTexture2D::3132042386850058949::1631182903::1710420204::1::::<><>::

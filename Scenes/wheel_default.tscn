@@ -6,7 +6,6 @@
 radius = 64.2398
 
 [node name="Wheel_default" type="RigidBody2D" groups=["wheel1_default"]]
-gravity_scale = 3.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(1.1, 1.1)
