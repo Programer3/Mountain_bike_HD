@@ -34,8 +34,6 @@ radius = 68.0
 height = 368.0
 
 [node name="car_RigidBody" type="RigidBody2D"]
-mass = 2.0
-gravity_scale = 2.0
 script = SubResource("GDScript_jcyqm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -51,7 +49,6 @@ shape = SubResource("CapsuleShape2D_o8at4")
 position = Vector2(-157, 105)
 node_a = NodePath("..")
 node_b = NodePath("Wheel_default")
-softness = 0.08
 
 [node name="Wheel_default" parent="PinJoint2D" instance=ExtResource("1_21tw6")]
 
@@ -59,7 +56,6 @@ softness = 0.08
 position = Vector2(121, 105)
 node_a = NodePath("..")
 node_b = NodePath("Wheel_default")
-softness = 0.08
 
 [node name="Wheel_default" parent="PinJoint2D2" instance=ExtResource("1_21tw6")]
 
