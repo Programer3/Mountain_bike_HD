@@ -21,7 +21,7 @@ func _on_item_rect():
 
 
 func _on_play_button_pressed():
-	get_tree().change_scene_to_file("res://Scenes/root_map1.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Levels/map1.tscn")
 
 func _on_options_button_pressed():
 	pass # Replace with function body.
