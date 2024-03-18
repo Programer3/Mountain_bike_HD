@@ -1,3 +1,4 @@
+# https://youtu.be/nKBhz6oJYsc <- reference
 extends Node2D
 
 @onready var collision_polygon_2d = $StaticBody2D/CollisionPolygon2D
@@ -5,9 +6,6 @@ extends Node2D
 @onready var static_body_2d = $StaticBody2D
 @onready var car_rigid_default = $car_rigid_default
 @onready var camera_2d = $Camera2D
-
-
-
 
 var screen_size : Vector2i
 
