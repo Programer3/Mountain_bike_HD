@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cumoo2gehyl0x"]
+
+[ext_resource type="Texture2D" uid="uid://dfk0c86iwbhe2" path="res://Sprites/Vehicles/Wheel.png" id="1_05xet"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_sqe72"]
+rough = true
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1uko6"]
+radius = 45.1774
+
+[node name="Wheel_Rigid_default" type="RigidBody2D" groups=["Wheel1_default"]]
+mass = 5.1
+physics_material_override = SubResource("PhysicsMaterial_sqe72")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_05xet")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1uko6")

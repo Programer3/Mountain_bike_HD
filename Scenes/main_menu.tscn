@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cu68i1er1spd2"]
 
 [ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_kkkmn"]
-[ext_resource type="FontFile" uid="uid://cej72coinogkw" path="res://Fonts/Adventure.otf" id="1_kmf4p"]
+[ext_resource type="FontFile" uid="uid://dbp4434870sw3" path="res://Fonts/junglefever.feverinlinenf.otf" id="2_6did4"]
 
 [sub_resource type="Gradient" id="Gradient_wnhst"]
 colors = PackedColorArray(0.163616, 0.478999, 0.483498, 1, 0.311737, 0.811145, 0.467975, 1)
@@ -14,51 +14,54 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -1152.0
-offset_bottom = -648.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kkkmn")
+metadata/_edit_vertical_guides_ = [960.0]
+metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1150.0
-offset_bottom = 650.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = SubResource("GradientTexture1D_n46jx")
 
 [node name="HypotheticalGameMenu" type="RichTextLabel" parent="TextureRect"]
 z_index = 2
+texture_filter = 6
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
+anchor_top = 0.547317
 anchor_right = 0.5
+anchor_bottom = 0.547317
 offset_left = -300.0
-offset_top = 42.0
+offset_top = -471.102
 offset_right = 300.0
-offset_bottom = 195.0
+offset_bottom = -251.102
 grow_horizontal = 2
+grow_vertical = 2
 tooltip_text = "Mountain Bike by Aman"
-theme_override_colors/font_outline_color = Color(0.243137, 0.54902, 0.533333, 1)
-theme_override_constants/outline_size = 6
-theme_override_fonts/normal_font = ExtResource("1_kmf4p")
-theme_override_font_sizes/normal_font_size = 120
-text = "Game Menu"
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 4
+theme_override_fonts/normal_font = ExtResource("2_6did4")
+theme_override_font_sizes/normal_font_size = 90
+text = " Mountain Adventure"
 fit_content = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 1150.0
-offset_bottom = 650.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect1" type="ColorRect" parent="Control"]
 layout_mode = 1
@@ -120,32 +123,26 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.317647, 0.803922, 1, 0.533333)
 
-[node name="GameMenuButton" type="Control" parent="."]
+[node name="GameMenuButtons" type="Control" parent="."]
 z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayButton" type="Button" parent="GameMenuButtons"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 252.0
-offset_top = 199.0
-offset_right = 920.0
-offset_bottom = 599.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="PlayButton" type="Button" parent="GameMenuButton"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.320359
-anchor_top = 0.14125
-anchor_right = 0.631737
-anchor_bottom = 0.17625
-offset_left = -34.0
-offset_top = -31.5
-offset_right = 54.0
-offset_bottom = 26.5
+offset_left = -176.0
+offset_top = -116.0
+offset_right = 174.0
+offset_bottom = -26.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
@@ -154,19 +151,18 @@ theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
 theme_override_font_sizes/font_size = 40
 text = "Play
 "
-metadata/_edit_use_anchors_ = true
 
-[node name="OptionsButton" type="Button" parent="GameMenuButton"]
+[node name="OptionsButton" type="Button" parent="GameMenuButtons"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.388473
-anchor_top = 0.38125
-anchor_right = 0.593563
-anchor_bottom = 0.40375
-offset_left = -79.5
-offset_top = -31.5
-offset_right = 79.5
-offset_bottom = 31.5
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = 4.0
+offset_right = 174.0
+offset_bottom = 94.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
@@ -174,19 +170,37 @@ tooltip_text = "Options/ Settings"
 theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
 theme_override_font_sizes/font_size = 40
 text = "Options"
-metadata/_edit_use_anchors_ = true
 
-[node name="QuitButton" type="Button" parent="GameMenuButton"]
+[node name="AboutButton" type="Button" parent="GameMenuButtons"]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.337575
-anchor_top = 0.86125
-anchor_right = 0.644461
-anchor_bottom = 0.86375
-offset_left = -45.5
-offset_top = -31.5
-offset_right = 45.5
-offset_bottom = 39.5
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = 124.0
+offset_right = 174.0
+offset_bottom = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "About"
+mouse_default_cursor_shape = 16
+theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
+theme_override_font_sizes/font_size = 40
+text = "About"
+
+[node name="QuitButton" type="Button" parent="GameMenuButtons"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = 244.0
+offset_right = 174.0
+offset_bottom = 334.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 3
@@ -195,28 +209,7 @@ theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
 theme_override_font_sizes/font_size = 40
 text = "Quit
 "
-metadata/_edit_use_anchors_ = true
 
-[node name="AboutButton" type="Button" parent="GameMenuButton"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.362275
-anchor_top = 0.62125
-anchor_right = 0.61976
-anchor_bottom = 0.64375
-offset_left = -62.0
-offset_top = -31.5
-offset_right = 62.0
-offset_bottom = 31.5
-grow_horizontal = 2
-grow_vertical = 2
-tooltip_text = "About"
-mouse_default_cursor_shape = 16
-theme_override_colors/font_hover_color = Color(0.164706, 0.827451, 0.505882, 1)
-theme_override_font_sizes/font_size = 40
-text = "About"
-metadata/_edit_use_anchors_ = true
-
-[connection signal="pressed" from="GameMenuButton/PlayButton" to="." method="_on_play_button_pressed"]
-[connection signal="pressed" from="GameMenuButton/OptionsButton" to="." method="_on_options_button_pressed"]
-[connection signal="pressed" from="GameMenuButton/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="GameMenuButtons/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="GameMenuButtons/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="GameMenuButtons/QuitButton" to="." method="_on_quit_button_pressed"]
