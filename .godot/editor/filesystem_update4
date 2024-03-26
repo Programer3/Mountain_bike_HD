@@ -1,4 +1,4 @@
 res://Scenes/main_menu.tscn
 res://Scenes/root_map1.tscn
-res://Scenes/root_map1.gd
-res://Scenes/car1.tscn
+res://default_bus_layout.tres
+res://Contributors.md
