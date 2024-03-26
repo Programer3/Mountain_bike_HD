@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbxrul1w64wgt"]
+
+[ext_resource type="Script" path="res://Scenes/root_map1.gd" id="1_dgobn"]
+[ext_resource type="PackedScene" uid="uid://c6ef62vklohd1" path="res://Scenes/car1.tscn" id="2_1llnr"]
+
+[node name="root_map1" type="Node"]
+script = ExtResource("1_dgobn")
+
+[node name="Line2D" type="Line2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="car1" parent="." instance=ExtResource("2_1llnr")]
+position = Vector2(148, 104)
+
+[node name="Camera2D" type="Camera2D" parent="car1"]
+position = Vector2(84, 82)
