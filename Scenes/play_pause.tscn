@@ -1,0 +1,112 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8uhccqw2iywe"]
+
+[ext_resource type="FontFile" uid="uid://dbp4434870sw3" path="res://Fonts/junglefever.feverinlinenf.otf" id="1_g8pyj"]
+
+[sub_resource type="Gradient" id="Gradient_3opln"]
+offsets = PackedFloat32Array(0, 0.201299, 0.311688, 0.545455, 0.785714, 1)
+colors = PackedColorArray(0.65098, 0, 0, 1, 0.971028, 0.487324, 0.681633, 1, 0.829953, 0.599847, 0.967707, 1, 0.979438, 0.724569, 0.784117, 1, 0.639216, 0.898039, 0.878431, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_pdh0g"]
+gradient = SubResource("Gradient_3opln")
+
+[node name="Play_Pause_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_pdh0g")
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = -70.0
+offset_top = 918.0
+offset_right = 188.0
+offset_bottom = 1254.0
+color = Color(0.909804, 0.0705882, 0.368627, 0.545098)
+
+[node name="ColorRect2" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 174.0
+offset_top = -120.0
+offset_right = 432.0
+offset_bottom = 216.0
+color = Color(0.909804, 0.0705882, 0.368627, 0.545098)
+
+[node name="ColorRect3" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1702.0
+offset_top = -120.0
+offset_right = 1960.0
+offset_bottom = 216.0
+color = Color(0.137255, 0.705882, 0.756863, 0.545098)
+
+[node name="ColorRect4" type="ColorRect" parent="TextureRect"]
+layout_mode = 0
+offset_left = 1737.0
+offset_top = 828.0
+offset_right = 2043.0
+offset_bottom = 1238.0
+color = Color(0.262745, 0.717647, 0.584314, 0.545098)
+
+[node name="HypotheticalPauseMenu" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -661.0
+offset_top = 68.0
+offset_right = 710.0
+offset_bottom = 788.0
+grow_horizontal = 2
+theme_override_fonts/normal_font = ExtResource("1_g8pyj")
+theme_override_font_sizes/normal_font_size = 200
+text = "Pause Menu"
+fit_content = true
+scroll_active = false
+
+[node name="PauseButton" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -305.0
+offset_top = -122.0
+offset_right = 396.0
+offset_bottom = 423.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="RetryBuuton" type="Button" parent="PauseButton"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+text = "Retry"
+metadata/_edit_use_anchors_ = true
+
+[node name="PauseBuuton" type="Button" parent="PauseButton"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+text = "Pause"
+metadata/_edit_use_anchors_ = true
+
+[node name="MainMenuButton" type="Button" parent="PauseButton"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+text = "MainMenu
+"
+metadata/_edit_use_anchors_ = true
