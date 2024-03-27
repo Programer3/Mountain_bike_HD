@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://3sycsb5d6lob"]
+[gd_scene load_steps=6 format=3 uid="uid://desnpseqwro2p"]
 
 [ext_resource type="Script" path="res://Scenes/car_rigid_default.gd" id="1_feo03"]
 [ext_resource type="Texture2D" uid="uid://70rf2y70c7rm" path="res://Sprites/Vehicles/RedCar.png" id="1_ns0fv"]

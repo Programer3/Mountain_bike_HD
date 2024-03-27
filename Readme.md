@@ -13,6 +13,9 @@ Real Steps and Turtorials related to Project Here
 
 > sub highlighting text here.
 `Code or ommands here`
+## 🌅Contribute : 
+To contribute, fork the repository and push the changes to the master branch. Then submit a pull request for merging with the source. If your code passes the review and checks it will be merged into the master branch
+
 
 ## ⌛TODO :-
 
