@@ -1,1 +1,5 @@
 https://stackoverflow.com/questions/1139762/ignore-files-that-have-already-been-committed-to-a-git-repository
+
+Current main todo :
+
+make current code optimized as in it should remove the unloaded map section (including texture, line2d, and polygon2d) from memory which is out of the view after player travells some reasonable distance from it. This is only needed for when moves forward in right side direction and not for when player moves backwards as in final game there will be no backwards control. Generate complete and working gdscript 4 code with proper syntax and comment like tabs instead of spaces.

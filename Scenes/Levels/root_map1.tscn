@@ -18,6 +18,3 @@ antialiased = true
 
 [node name="car1" parent="." instance=ExtResource("2_1llnr")]
 position = Vector2(148, 104)
-
-[node name="Camera2D2" type="Camera2D" parent="car1"]
-position = Vector2(84, 82)

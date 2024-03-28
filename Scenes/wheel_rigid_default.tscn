@@ -13,8 +13,9 @@ mass = 5.1
 physics_material_override = SubResource("PhysicsMaterial_sqe72")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.7, 0.7)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("1_05xet")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.9, 0.9)
 shape = SubResource("CircleShape2D_1uko6")

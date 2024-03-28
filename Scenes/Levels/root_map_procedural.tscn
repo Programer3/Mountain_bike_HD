@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbri5b8a3oxba"]
+[gd_scene load_steps=3 format=3 uid="uid://cbri5b8a3oxba"]
 
-[ext_resource type="Texture2D" uid="uid://kiw1po480a6v" path="res://Sprites/Terrain/Grass.png" id="1_2pxy6"]
 [ext_resource type="Script" path="res://Scenes/Levels/root_map_procedural.gd" id="1_48n6x"]
 [ext_resource type="PackedScene" uid="uid://desnpseqwro2p" path="res://Scenes/car_rigid_default.tscn" id="2_d4al4"]
 
@@ -10,16 +9,13 @@ script = ExtResource("1_48n6x")
 [node name="Line2D" type="Line2D" parent="."]
 top_level = true
 z_index = 1
-texture = ExtResource("1_2pxy6")
+default_color = Color(0.42177, 0.79899, 0.289514, 1)
 texture_mode = 1
 antialiased = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="car1" parent="." instance=ExtResource("2_d4al4")]
-position = Vector2(148, 104)
-
-[node name="Camera2D2" type="Camera2D" parent="car1"]
-position = Vector2(84, 82)
+position = Vector2(152, 152)
 
 [node name="Polygon2D" type="Polygon2D" parent="."]

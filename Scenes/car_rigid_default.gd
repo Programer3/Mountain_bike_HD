@@ -26,9 +26,29 @@ func _physics_process(delta):
 		for wheellooper in wheels:
 			if wheellooper.angular_velocity > -max_speed:
 				wheellooper.apply_torque_impulse(-speed * 60 * delta)
-	
-	if flip_detection_enabled and rotation > 2*PI / 3 or rotation < -2*PI / 3: # for debugging
+
+#var start_time = Time.get_ticks_msec()
+#
+	 ## Later in your code:
+	 #var current_time = Time.get_ticks_msec()
+	 #var elapsed_time_in_seconds = (current_time - start_time) / 1000.0
+#
+	 #if elapsed_time_in_seconds > 5:
+		 #print("More than 5 seconds have passed since start.")
+
+
+	if (flip_detection_enabled and rotation > 2*PI / 3 or rotation < -2*PI / 3): # for debugging
 		position = get_current_position()
 		rotation = original_rotation
 		linear_velocity = Vector2.ZERO
 		angular_velocity = 0.0
+	#elif (or Time.get_ticks_msec(rotation > PI/3 or rotation < -PI/3) Time.get_ticks_msec()):
+		#code to unflip same as above
+	# 	var start_time = Time.get_ticks_msec()
+
+    #  # Later in your code:
+    #  var current_time = Time.get_ticks_msec()
+    #  var elapsed_time_in_seconds = (current_time - start_time) / 1000.0
+
+    #  if elapsed_time_in_seconds > 5:
+    #      print("More than 5 seconds have passed since start.")

@@ -56,8 +56,8 @@ func add_hills(to_right: bool):
 		var ground = Polygon2D.new()
 		static_body_2d.add_child(shape)
 		# Ensure the polygon closes by adding points at the bottom
-		poly.append(Vector2(terrain[-1].x, screensize.y * 3))
-		poly.append(Vector2(start.x, screensize.y * 3))
+		poly.append(Vector2(terrain[-1].x, screensize.y * 2))
+		poly.append(Vector2(start.x, screensize.y * 2))
 		shape.polygon = poly
 		ground.polygon = poly
 		# Apply the texture to the ground
