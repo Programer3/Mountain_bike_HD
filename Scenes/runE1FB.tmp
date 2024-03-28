@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6ef62vklohd1"]
+
+[ext_resource type="Texture2D" uid="uid://bf6wlg2g6ad3k" path="res://icon.svg" id="1_4oavh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_k6h67"]
+
+[node name="Node" type="Node"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(84, 79)
+scale = Vector2(0.53125, 0.507813)
+texture = ExtResource("1_4oavh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(84, 79)
+scale = Vector2(3.5, 3.5)
+shape = SubResource("CircleShape2D_k6h67")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(81, 80)
