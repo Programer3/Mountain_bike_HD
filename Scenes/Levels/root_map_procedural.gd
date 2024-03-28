@@ -13,7 +13,7 @@ var texture = preload("res://Sprites/Terrain/DirtBG.png")  # Load the texture fo
 
 func _ready():
 	randomize()  # Initialize the random number generator
-	screensize = get_viewport().get_visible_rect().size  # Get the size of the game screen
+	screensize = get_viewport().get_visible_rect().size # Get the size of the game screen
 	# Calculate the starting Y position of the terrain
 	var start_y = screensize.y * 3/4 + (-hill_range + randi() % hill_range*2)
 	terrain.append(Vector2(0, start_y))  # Initialize the terrain with the starting point
@@ -35,7 +35,7 @@ func add_hills(to_right: bool):
 	var start = terrain[start_index]  # Get the starting point for hill generation
 	var poly = PackedVector2Array()  # Initialize an array to store the points for collision shapes
 	for i in range(num_hills):
-		var height = (randi() % hill_range) / 1.5  # Randomly determine the height of the hill
+		var height = (randi() % hill_range) / 1.2 # Randomly determine the height of the hill
 		start.y -= height  # Adjust the starting height for the hill
 		for j in range(0, hill_slices):
 			# Calculate the x and y positions of each point on the hill
@@ -56,8 +56,8 @@ func add_hills(to_right: bool):
 		var ground = Polygon2D.new()
 		static_body_2d.add_child(shape)
 		# Ensure the polygon closes by adding points at the bottom
-		poly.append(Vector2(terrain[-1].x, screensize.y))
-		poly.append(Vector2(start.x, screensize.y))
+		poly.append(Vector2(terrain[-1].x, screensize.y * 3))
+		poly.append(Vector2(start.x, screensize.y * 3))
 		shape.polygon = poly
 		ground.polygon = poly
 		# Apply the texture to the ground
@@ -73,8 +73,8 @@ func add_hills(to_right: bool):
 		poly.reverse()
 		static_body_2d.add_child(shape)
 		# Ensure the polygon closes by adding points at the bottom
-		poly.append(Vector2(terrain[0].x, screensize.y))
-		poly.append(Vector2(start.x, screensize.y))
+		poly.append(Vector2(terrain[0].x, screensize.y * 2))
+		poly.append(Vector2(start.x, screensize.y * 2))
 		shape.polygon = poly
 		ground.polygon = poly
 		# Apply the texture to the ground
@@ -82,4 +82,4 @@ func add_hills(to_right: bool):
 		ground.texture_scale = Vector2(1, 1)
 		ground.texture_offset = Vector2(0, 0)
 		ground.texture_repeat = CanvasItem.TEXTURE_REPEAT_ENABLED
-		add_child(ground)  # Note: Special handling may be needed for leftward generation.
+		add_child(ground)

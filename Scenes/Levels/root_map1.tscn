@@ -1,12 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://bbxrul1w64wgt"]
+[gd_scene load_steps=4 format=3 uid="uid://bbxrul1w64wgt"]
 
 [ext_resource type="Script" path="res://Scenes/Levels/root_map1.gd" id="1_dgobn"]
 [ext_resource type="PackedScene" uid="uid://desnpseqwro2p" path="res://Scenes/car_rigid_default.tscn" id="2_1llnr"]
+[ext_resource type="Texture2D" uid="uid://kiw1po480a6v" path="res://Sprites/Terrain/Grass.png" id="2_abj6r"]
 
 [node name="root_map1" type="Node"]
 script = ExtResource("1_dgobn")
 
 [node name="Line2D" type="Line2D" parent="."]
+top_level = true
+z_index = 1
+texture = ExtResource("2_abj6r")
+texture_mode = 1
+antialiased = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
